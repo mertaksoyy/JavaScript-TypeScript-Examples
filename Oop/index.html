@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculator</title>
+</head>
+<body>
+   
+    
+    <div id="calculator">   <!-- calculator adında div. -->
+        <input id="display"><!--Sadece okuma yapmaya ayarlandı.Girilen sayıları ve sonucu gösterecek yers-->
+        <div id="keys">
+            <button onclick="appendToDisplay('+')" class="calcBtn  mathOprt" >+</button> <!--appendToDisplay() bu bir JS fonksiyonu-->
+            <button onclick="appendToDisplay('7')" class="calcBtn Num">7</button>
+            <button onclick="appendToDisplay('8')" class="calcBtn Num">8</button>
+            <button onclick="appendToDisplay('9')" class="calcBtn Num">9</button>
+            <button onclick="appendToDisplay('-')" class="calcBtn  mathOprt">-</button>
+            <button onclick="appendToDisplay('4')" class="calcBtn Num">4</button>
+            <button onclick="appendToDisplay('5')" class="calcBtn Num">5</button>
+            <button onclick="appendToDisplay('6')" class="calcBtn Num">6</button>
+            <button onclick="appendToDisplay('*')" class="calcBtn mathOprt">*</button>
+            <button onclick="appendToDisplay('1')" class="calcBtn Num">1</button>
+            <button onclick="appendToDisplay('2')" class="calcBtn Num">2</button>
+            <button onclick="appendToDisplay('3')" class="calcBtn Num">3</button>
+            <button onclick="appendToDisplay('/')" class="calcBtn mathOprt">/</button>
+            <button onclick="appendToDisplay('0')" class="calcBtn Num">0</button>
+            <button onclick="appendToDisplay('.')" class="calcBtn Num">.</button>
+            <button onclick="calculate()"         class="calcBtn mathOprt">=</button> <!--Butona click ile hesaplama fonksiyonu-->
+            <button onclick="clearDisplay()" class="calcBtn mathOprt">C</button> <!--Ekranı temizleme fonksiyonu-->
+        </div>
+    </div> 
+
+
+
+    <script src = "index.js"></script>
+    <script src="app.ts"></script>
+    <script src="screen.ts"></script>
+    <script src="numpads.ts"></script>
+    <script src="calculator.ts"></script>
+</body>
+</html>
