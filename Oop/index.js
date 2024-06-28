@@ -5,10 +5,10 @@ function appendToDisplay(input){
     display.value += input;
 }
 
-function clearDisplay(){
+/*function clearDisplay(){
     display.value = "";
 }
-
+*/
 //Eval kodda içine ne yazarsan onu çalıştırır.Burada Display de her ne yazıyorsa o işlemi yapacak
 //Ancak büyük bir güvenlik açığı oluşuturuyor kullanmamak en iyisi.
 //hata ve güvenlik için try catch
