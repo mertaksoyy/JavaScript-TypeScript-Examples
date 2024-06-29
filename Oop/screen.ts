@@ -1,4 +1,4 @@
-export class AppScreen{ //Diğer sınıflardan erişim için Export ettim
+ class AppScreen{ 
     //private display = document.getElementById("screen");//Bu şekilde html öğesini string işlem yaptıramıyorum
     private display : HTMLDivElement; //HTMLDivElement ile Html içindeki Div elementini manüpüle için kullanabilirim
 

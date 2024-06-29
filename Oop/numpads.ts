@@ -12,8 +12,8 @@ export class NumPads{
         this.initialize();
       }
 
-    
-    
+      
+    }
 
 
-}
+

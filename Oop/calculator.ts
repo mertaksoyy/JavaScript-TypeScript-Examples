@@ -1,4 +1,4 @@
-export class Calculator{//Diğer sınıflardan erişim için Export ettim
+ class Calculator{
     currentValue : number;
     oldValue : number;
     operator: string | null;
