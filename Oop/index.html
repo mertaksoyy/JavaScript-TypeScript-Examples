@@ -10,24 +10,28 @@
   <div id="calculator">
     <div id="screen"></div>
     <div id="numpads">
-      <button class="operator">+</button>
-      <button class="digit">7</button>
-      <button class="digit">8</button>
-      <button class="digit">9</button>
-      <button class="operator">-</button>
-      <button class="digit">4</button>
-      <button class="digit">5</button>
-      <button class="digit">6</button>
-      <button class="operator">*</button>
-      <button class="digit">1</button>
-      <button class="digit">2</button>
-      <button class="digit">3</button>
-      <button class="operator">/</button>
-      <button id="digit">0</button>
-      <button id="equals">=</button>
-      <button class="clear">C</button>
+      <button class="operator" onclick="numpad.handleButtonClick('+')">+</button>
+      <button class="digit" onclick="numpad.handleButtonClick('7')">7</button>
+      <button class="digit" onclick="numpad.handleButtonClick('8')">8</button>
+      <button class="digit" onclick="numpad.handleButtonClick('9')">9</button>
+      <button class="operator" onclick="numpad.handleButtonClick('-')">-</button>
+      <button class="digit" onclick="numpad.handleButtonClick('4')">4</button>
+      <button class="digit" onclick="numpad.handleButtonClick('5')">5</button>
+      <button class="digit" onclick="numpad.handleButtonClick('6')">6</button>
+      <button class="operator" onclick="numpad.handleButtonClick('*')">*</button>
+      <button class="digit" onclick="numpad.handleButtonClick('1')">1</button>
+      <button class="digit" onclick="numpad.handleButtonClick('2')">2</button>
+      <button class="digit" onclick="numpad.handleButtonClick('3')">3</button>
+      <button class="operator" onclick="numpad.handleButtonClick('/')">/</button>
+      <button class="digit" onclick="numpad.handleButtonClick('0')">0</button>
+      <button id="equals" onclick="numpad.handleButtonClick('=')">=</button>
+      <button class="clear" onclick="numpad.handleButtonClick('C')">C</button>
     </div>
   </div>
-  <script src="app.ts"></script>
+  <script>
+    const screen = new AppScreen('screen');
+    const calculator = new Calculator(screen);
+    const numpad = new Numpad(calculator, screen);
+  </script>
 </body>
 </html>
